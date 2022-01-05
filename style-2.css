@@ -1,0 +1,31 @@
+@keyframes change-color{
+    /* from {background-color: red;}
+    to {background-color: blue;} */
+    0% {background-color: aqua;top: 10px; left: 10px;}
+    10% {background-color: rgb(0, 255, 21);top: 20px; left: 20px;}
+    20% {background-color: rgb(255, 196, 0);top: 30px; left: 30px;}
+    30% {background-color: rgb(255, 0, 221);top: 40px; left: 40px;}
+    40% {background-color: rgb(0, 81, 255);top: 50px; left: 50px;}
+    50% {background-color: rgb(255, 153, 0);top: 60px; left: 60px;}
+    60% {background-color: rgb(255, 0, 0);top: 70px; left: 70px;}
+    70% {background-color: rgb(225, 0, 255);top: 80px; left: 80px;}
+    80% {background-color: rgb(51, 255, 0);top: 85px; left: 85px;}
+    90% {background-color: rgb(0, 17, 255);top: 90px; left: 90px;}
+    100% {background-color: rgb(255, 0, 43);top: 100px; left: 100px;}
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+}
+/*     animation-iteration-count: infinite; 讓動畫重複一直跑 */
+/*     animation-duration: 2s; 間隔幾秒轉換 */
+.box-animation{
+    animation-name:change-color;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-delay:2s ;
+}

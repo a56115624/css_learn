@@ -1,6 +1,18 @@
 /* flex 預設就是橫的,從左到右 */
+/* flex-wrap: wrap; 寬度不夠就自動換行 */
+/*     flex-direction: column; 把主軸改成由上而下 */
+/*     flex-direction: column-reverse; 把主軸改成由上而下 */
+/*     justify-content: center; 放到主軸的中間 */
+/*     align-items: center; 次軸置中 */
 .container{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 300px;
+    border: 1px solid red;
+    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 .container div{
@@ -9,14 +21,18 @@
     width: 100px;
 }
 /* flex:1  代表各拿一份,所以總共3分 */
+/* order 讓妳由左至右排列 */
 .box-1{
-    flex:1;
+    /* flex:3; */
+    /* order:2; */
 }
 
 .box-2{
-    flex:1;
+    /* flex:3; */
+    /* order:1; */
 }
 
 .box-3{
-    flex:1;
+    /* flex:5; */
+    /* order:3; */
 }
