@@ -1,10 +1,20 @@
 h2{
     background-color: blue;
 }
-.class-1{
+.class-1:hover{
     color: red;
 }
 #id-1, .class-2{
     background-color: yellow;
 }
 /* 如果用*會套用到整個網頁 */
+ul li{
+    background-color: aqua;
+}
+/* 滑鼠滑過去會變色超屌的 */
+h1:hover {
+    background-color: blue;
+}
+[type] {
+    background-color: aqua;
+}

@@ -1,0 +1,22 @@
+/* flex 預設就是橫的,從左到右 */
+.container{
+    display: flex;
+}
+
+.container div{
+    border: 1px solid red;
+    padding: 10px;
+    width: 100px;
+}
+/* flex:1  代表各拿一份,所以總共3分 */
+.box-1{
+    flex:1;
+}
+
+.box-2{
+    flex:1;
+}
+
+.box-3{
+    flex:1;
+}
