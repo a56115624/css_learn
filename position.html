@@ -18,8 +18,10 @@
     <div style="width: 120px; height: 120px; background-color: red;"></div>
     <br/>
     <!-- 加入外框 -->
-    <div style="padding: 30px;border:5px  solid  blue;"></div>
-        <div style="padding: 30px;border:5px solid  rgb(255, 0, 242)"></div>
-            <div style="width: 40px; height: 40px; background-color: rgb(145, 255, 0);"></div>
+    <!-- 再加入定位的時候,如果外層有定位,那麼他會根據外層的結果定位到內層 -->
+    <div style="padding: 30px;border:5px  solid  blue;">
+        <div style="position:relative; padding: 30px;border:5px solid  rgb(255, 0, 242)">
+            <div style="position: absolute;  bottom: 0px; left: 0px; right: 0px;width: 40px; height: 40px; background-color: rgb(145, 255, 0);">
+        </div>
     </body>
 </html>
